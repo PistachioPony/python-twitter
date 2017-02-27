@@ -143,6 +143,8 @@ def main():
         print "Try explicitly specifying the encoding with the --encoding flag"
         sys.exit(2)
     print "%s just posted: %s" % (status.user.name, status.text)
+    # if you are using python 3 you can print it this way:
+    # print ("{} just posted: {}".format(status.user.name, status.text))
 
 
 if __name__ == "__main__":
